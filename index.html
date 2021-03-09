@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  
+  
+  <script type="text/javascript" charset="utf-8">
+    
+    
+    
+    function Student(name, roll, Class, gpa){
+      this.name= name;
+      this.roll= roll;
+      this.Class= Class;
+      this.gpa= gpa;
+      
+      this.display= function(){
+        document.write(' <b>Name: </b> ' + this.name + '<br />');
+        document.write(' <b>Roll: </b> ' + this.roll + '<br />');
+        document.write(' <b>Class: </b> ' + this.Class + '<br />');
+        document.write(' <b>Gpa: </b> ' + this.gpa + '<br /> <br />');
+      }
+    }
+    
+    var asha101= new Student('Asha',101,'Six', 4.50);
+    var raju102= new Student('Raju',102,'Hons', 3.25);
+    var happy103= new Student('Happy',103,'Hons', 3.25);
+    var hasib104= new Student('Hasib',104,'Enter 2nd', 4.50);
+    var sohana105= new Student('Sohana',105,'Admission', 5.00);
+    var elora106= new Student('Elora',106,'Hons', 3.20);
+    
+    
+    
+    
+    
+    
+    var user= prompt('Enter your id :(asha101,raju102,happy103,hasib104,sohana105,elora106): ')
+    
+    if(user== 'asha101'){
+      asha101.display()
+      
+    }
+    
+    else if(user=='raju102'){
+      raju102.display()
+    }
+    
+    else if(user=='happy103'){
+      happy103.display()
+    }
+    
+    else if(user=='hasib104'){
+      hasib104.display()
+    }
+    
+    else if(user=='sohana105'){
+      sohana105.display()
+    }
+    
+    else if(user=='elora106'){
+       elora106.display()
+    }
+    else{
+      document.write('<b>Please input valid id</b>')
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    /*
+    
+   asha101.display();
+   raju102.display();
+   happy103.display();
+   hasib104.display();
+   sohana105.display();
+
+*/
+
+
+
+
+
+  </script>
+  
+  
+</body>
+</html>
